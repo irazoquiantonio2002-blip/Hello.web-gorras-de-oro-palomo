@@ -1,0 +1,2705 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorras de Oro Palomo | Gorras personalizadas banadas en oro 14K</title>
+  <meta name="description" content="Gorras de Oro Palomo fabrica gorras personalizadas con placas metalicas banadas en oro 14K, circonias y disenos exclusivos para destacar con estilo premium.">
+  <meta name="keywords" content="Gorras de Oro Palomo, gorras personalizadas, gorras banadas en oro 14K, Golden Pigeon Brand of Caps, gorras con placa metalica">
+  <meta property="og:title" content="Gorras de Oro Palomo | Golden Pigeon Brand of Caps">
+  <meta property="og:description" content="Gorras unicas, irrepetibles y personalizadas con detalles dorados de alto impacto.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="A516D67DDE63F39A0212270481BF1B62.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --black: #000000;
+      --ink: #090909;
+      --charcoal: #111111;
+      --charcoal-2: #171717;
+      --gold: #FFD700;
+      --gold-2: #FFC300;
+      --gold-3: #B88919;
+      --white: #FFFFFF;
+      --soft: #F7F4E9;
+      --gray: #B7B7B7;
+      --muted: #777777;
+      --line: rgba(255, 215, 0, .18);
+      --shadow: 0 24px 80px rgba(0, 0, 0, .45);
+      --ease: cubic-bezier(.2, .85, .2, 1);
+      --radius: 8px;
+      --container: min(1180px, calc(100% - 40px));
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--black);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(255, 215, 0, .12), transparent 28rem),
+        linear-gradient(180deg, #000 0%, #101010 43%, #050505 100%);
+      overflow-x: hidden;
+      letter-spacing: 0;
+    }
+
+    body.loading {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .container {
+      width: var(--container);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .gold { color: var(--gold); }
+
+    .label {
+      width: fit-content;
+      padding: 9px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--gold);
+      background: rgba(255, 215, 0, .08);
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+    }
+
+    .section-title {
+      margin: 16px 0 0;
+      color: var(--white);
+      font-size: clamp(34px, 5vw, 72px);
+      line-height: .96;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .section-copy {
+      margin: 18px 0 0;
+      max-width: 640px;
+      color: var(--gray);
+      font-size: clamp(15px, 1.6vw, 18px);
+      line-height: 1.75;
+    }
+
+    .btn-gold,
+    .btn-outline,
+    .form-submit {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      padding: 13px 24px;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform .35s var(--ease), border-color .35s var(--ease), background .35s var(--ease), color .35s var(--ease), box-shadow .35s var(--ease);
+      white-space: nowrap;
+    }
+
+    .btn-gold,
+    .form-submit {
+      color: #050505;
+      background: linear-gradient(135deg, var(--gold), var(--gold-2) 48%, #fff1a6);
+      box-shadow: 0 16px 46px rgba(255, 211, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .65);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, .22);
+      background: rgba(255, 255, 255, .06);
+      backdrop-filter: blur(14px);
+    }
+
+    .btn-gold:hover,
+    .btn-outline:hover,
+    .form-submit:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 215, 0, .45);
+      box-shadow: 0 20px 52px rgba(255, 211, 0, .28);
+    }
+
+    #loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at center, rgba(255, 215, 0, .18), transparent 20rem),
+        linear-gradient(135deg, #000 0%, #111 45%, #000 100%);
+      transition: opacity .9s var(--ease), visibility .9s var(--ease), transform .9s var(--ease);
+    }
+
+    #loader::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent, rgba(255, 215, 0, .16), transparent),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 1px, transparent 1px 90px);
+      animation: loaderScan 2.2s ease-in-out infinite;
+    }
+
+    .loader-panel {
+      position: relative;
+      width: min(360px, calc(100vw - 48px));
+      min-height: 330px;
+      display: grid;
+      place-items: center;
+      padding: 34px;
+      border: 1px solid rgba(255, 215, 0, .28);
+      border-radius: 8px;
+      background: rgba(0, 0, 0, .58);
+      box-shadow: 0 30px 120px rgba(255, 215, 0, .18);
+      overflow: hidden;
+    }
+
+    .loader-panel::after {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: conic-gradient(from 120deg, transparent, rgba(255,215,0,.26), transparent 32%);
+      animation: loaderHalo 3.4s linear infinite;
+    }
+
+    .loader-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      justify-items: center;
+      gap: 18px;
+    }
+
+    .loader-logo {
+      width: 154px;
+      height: 154px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid rgba(255, 215, 0, .55);
+      box-shadow: 0 0 0 10px rgba(255, 215, 0, .05), 0 0 55px rgba(255, 215, 0, .24);
+      animation: logoPulse 1.8s ease-in-out infinite;
+    }
+
+    .loader-bar {
+      width: 210px;
+      height: 4px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .loader-bar-fill {
+      width: 42%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, transparent, var(--gold), #fff4ac);
+      animation: loaderFill 1.35s ease-in-out infinite;
+    }
+
+    .loader-text {
+      color: var(--soft);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    body.loaded #loader {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.04);
+      pointer-events: none;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      transition: background .35s var(--ease), border-color .35s var(--ease), transform .35s var(--ease);
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(0, 0, 0, .46);
+      backdrop-filter: blur(18px);
+    }
+
+    #navbar.scrolled {
+      background: rgba(0, 0, 0, .86);
+      border-color: rgba(255, 215, 0, .18);
+    }
+
+    .nav-inner {
+      height: 82px;
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 218px;
+    }
+
+    .nav-logo-icon,
+    .footer-logo-img {
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .42);
+      background: #000;
+      box-shadow: 0 0 0 6px rgba(255, 215, 0, .05);
+      flex: 0 0 auto;
+    }
+
+    .nav-logo-icon img,
+    .footer-logo-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nav-logo-copy {
+      display: grid;
+      line-height: .95;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .nav-logo-copy span:first-child {
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    .nav-logo-copy span:last-child {
+      color: var(--white);
+      font-size: 18px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 26px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, .78);
+      font-size: 13px;
+      font-weight: 800;
+      transition: color .3s var(--ease);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .hamburger {
+      width: 48px;
+      height: 48px;
+      display: none;
+      place-items: center;
+      gap: 5px;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .06);
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--gold);
+      transition: transform .25s var(--ease), opacity .25s var(--ease);
+    }
+
+    #mob-menu {
+      display: none;
+      border-top: 1px solid rgba(255, 215, 0, .13);
+      background: rgba(0, 0, 0, .94);
+      padding: 12px 20px 22px;
+    }
+
+    #mob-menu a {
+      display: block;
+      padding: 14px 0;
+      color: rgba(255, 255, 255, .82);
+      font-weight: 800;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      align-items: center;
+      padding: 132px 0 78px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero-bg,
+    .image-band-bg {
+      position: absolute;
+      inset: 0;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      transform: scale(1.05);
+      filter: saturate(1.05) contrast(1.12);
+      animation: slowDrift 18s ease-in-out infinite alternate;
+    }
+
+    .hero-bg {
+      background-image: url("A516D67DDE63F39A0212270481BF1B62.jpeg");
+      opacity: .46;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.74) 42%, rgba(0,0,0,.22) 100%),
+        radial-gradient(circle at 72% 18%, rgba(255, 215, 0, .22), transparent 24rem);
+      z-index: 0;
+    }
+
+    .hero-vignette,
+    .hero-grid,
+    .hero-grain,
+    .hero-scanline {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hero-vignette {
+      box-shadow: inset 0 -180px 140px #000, inset 0 120px 140px rgba(0,0,0,.72);
+      z-index: 1;
+    }
+
+    .hero-grid {
+      z-index: 1;
+      opacity: .42;
+      background-image:
+        linear-gradient(rgba(255, 215, 0, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 215, 0, .08) 1px, transparent 1px);
+      background-size: 74px 74px;
+      mask-image: linear-gradient(90deg, #000 0%, transparent 70%);
+    }
+
+    #hero-canvas,
+    .particle-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .hero-rays {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: .52;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .hero-ray {
+      position: absolute;
+      top: -25%;
+      width: 2px;
+      height: 145%;
+      background: linear-gradient(180deg, transparent, rgba(255,215,0,.55), transparent);
+      transform: rotate(24deg);
+      animation: raySweep 6.5s ease-in-out infinite;
+    }
+
+    .r1 { left: 15%; animation-delay: .1s; }
+    .r2 { left: 42%; animation-delay: 1.5s; }
+    .r3 { left: 65%; animation-delay: 2.3s; }
+    .r4 { left: 78%; animation-delay: 3.2s; }
+    .r5 { left: 91%; animation-delay: 4.1s; }
+
+    .hero-grain {
+      z-index: 2;
+      opacity: .12;
+      background-image: radial-gradient(rgba(255,255,255,.72) .6px, transparent .6px);
+      background-size: 4px 4px;
+    }
+
+    .hero-scanline {
+      z-index: 4;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 215, 0, .26) 50%, transparent 100%);
+      height: 16%;
+      inset: -20% 0 auto;
+      animation: scanIntro 2.9s var(--ease) .25s 1 both;
+    }
+
+    .hero-content {
+      width: min(850px, 100%);
+      padding-top: 42px;
+    }
+
+    .hero-badge {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid rgba(255, 215, 0, .24);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, .44);
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      backdrop-filter: blur(14px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 8px rgba(255, 215, 0, .13);
+    }
+
+    .hero-title {
+      margin: 28px 0 0;
+      color: var(--white);
+      font-size: clamp(48px, 9.2vw, 132px);
+      line-height: .86;
+      font-weight: 900;
+      text-transform: uppercase;
+      max-width: 940px;
+    }
+
+    .hero-title .line {
+      display: block;
+      overflow: hidden;
+    }
+
+    .hero-title .line > span {
+      display: block;
+      transform: translateY(110%);
+      animation: titleRise .95s var(--ease) forwards;
+    }
+
+    .hero-title .line:nth-child(2) > span { animation-delay: .18s; }
+    .hero-title .line:nth-child(3) > span { animation-delay: .36s; }
+
+    .hero-title em,
+    .hero-title .accent {
+      color: var(--gold);
+      font-style: italic;
+      text-shadow: 0 0 34px rgba(255, 215, 0, .24);
+    }
+
+    .hero-sub {
+      max-width: 680px;
+      margin: 26px 0 0;
+      color: rgba(255, 255, 255, .78);
+      font-size: clamp(16px, 2vw, 21px);
+      line-height: 1.7;
+    }
+
+    .hero-sub strong {
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .hero-trust {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 34px;
+      padding: 14px 16px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      background: rgba(0, 0, 0, .46);
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+    }
+
+    .trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--soft);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .trust-item i { color: var(--gold); }
+
+    .trust-divider {
+      width: 1px;
+      height: 24px;
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      z-index: 4;
+      transform: translateX(-50%);
+      opacity: .78;
+    }
+
+    .scroll-mouse {
+      width: 28px;
+      height: 46px;
+      border: 1px solid rgba(255, 215, 0, .48);
+      border-radius: 999px;
+      display: grid;
+      justify-content: center;
+      padding-top: 8px;
+    }
+
+    .scroll-mouse-dot {
+      width: 4px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      animation: mouseDot 1.3s ease-in-out infinite;
+    }
+
+    .marquee {
+      position: relative;
+      overflow: hidden;
+      border-block: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(255, 215, 0, .14), rgba(0, 0, 0, .84), rgba(255, 215, 0, .14));
+      z-index: 5;
+    }
+
+    .marquee-inner {
+      display: flex;
+      gap: 36px;
+      width: max-content;
+      padding: 17px 0;
+      color: var(--gold);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      animation: marqueeMove 28s linear infinite;
+    }
+
+    .marquee-inner span {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      white-space: nowrap;
+    }
+
+    .marquee-inner span::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 18px var(--gold);
+    }
+
+    section {
+      position: relative;
+      padding: 112px 0;
+      overflow: hidden;
+    }
+
+    #why,
+    #proceso,
+    #sectores,
+    #testimonios {
+      background: #050505;
+    }
+
+    #why::before,
+    #producto::before,
+    #testimonios::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(255, 215, 0, .13), transparent 24rem),
+        linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px);
+      background-size: auto, 78px 78px, 78px 78px;
+      opacity: .65;
+      pointer-events: none;
+    }
+
+    .why-header,
+    .ambientes-top,
+    .proceso-header,
+    .sectores-hdr,
+    .contact-hdr {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .65fr);
+      gap: 42px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .why-quote {
+      margin: 18px 0 0;
+      max-width: 790px;
+      color: var(--white);
+      font-size: clamp(34px, 5.6vw, 78px);
+      line-height: .98;
+      font-weight: 900;
+    }
+
+    .why-quote em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .why-sub,
+    .proceso-header p,
+    .sectores-hdr p,
+    .contact-hdr p {
+      color: var(--gray);
+      line-height: 1.75;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .f-card,
+    .proceso-step,
+    .sector-card,
+    .testimonial-card {
+      position: relative;
+      min-height: 280px;
+      padding: 30px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 215, 0, .14);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .025)),
+        #0A0A0A;
+      overflow: hidden;
+      box-shadow: 0 20px 80px rgba(0,0,0,.24);
+      transition: transform .35s var(--ease), border-color .35s var(--ease), background .35s var(--ease);
+    }
+
+    .f-card:hover,
+    .proceso-step:hover,
+    .sector-card:hover,
+    .testimonial-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(255, 215, 0, .46);
+      background:
+        linear-gradient(180deg, rgba(255, 215, 0, .09), rgba(255, 255, 255, .025)),
+        #0A0A0A;
+    }
+
+    .f-num {
+      position: absolute;
+      top: 16px;
+      right: 22px;
+      color: rgba(255, 215, 0, .16);
+      font-size: 72px;
+      line-height: .8;
+      font-weight: 900;
+    }
+
+    .f-icon,
+    .ci-icon,
+    .f-row-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--gold);
+      border: 1px solid var(--line);
+      background: rgba(255, 215, 0, .08);
+    }
+
+    .f-card h3,
+    .proceso-step h3,
+    .sector-card h3,
+    .testimonial-card h3 {
+      margin: 34px 0 10px;
+      color: var(--white);
+      font-size: 22px;
+      line-height: 1.12;
+    }
+
+    .f-card p,
+    .proceso-step p,
+    .testimonial-card p {
+      margin: 0;
+      color: var(--gray);
+      line-height: 1.72;
+      font-size: 15px;
+    }
+
+    #ambientes {
+      background: linear-gradient(180deg, #070707 0%, #121212 48%, #050505 100%);
+    }
+
+    .ambiente-pill {
+      display: inline-flex;
+      padding: 14px 20px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #050505;
+      font-weight: 900;
+      box-shadow: 0 20px 60px rgba(255, 215, 0, .18);
+    }
+
+    .ambientes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .amb-card {
+      position: relative;
+      min-height: 500px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .15);
+      background: #0a0a0a;
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .amb-img {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      object-fit: cover;
+      transform: scale(1.03);
+      transition: transform .7s var(--ease), opacity .7s var(--ease);
+    }
+
+    .amb-card:hover .amb-img {
+      transform: scale(1.09);
+      opacity: .72;
+    }
+
+    .amb-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.95) 100%),
+        radial-gradient(circle at 50% 42%, rgba(255, 215, 0, .15), transparent 18rem);
+      z-index: 1;
+    }
+
+    .amb-icon-wrap {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,215,0,.34);
+      border-radius: 999px;
+      background: rgba(255,215,0,.08);
+      margin-bottom: 16px;
+      color: var(--gold);
+    }
+
+    .amb-overlay h3 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+
+    .amb-overlay p {
+      margin: 0;
+      color: rgba(255, 255, 255, .76);
+      line-height: 1.65;
+    }
+
+    .amb-temp {
+      width: fit-content;
+      margin-top: 18px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      color: #050505;
+      background: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    #proceso {
+      background:
+        linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.88)),
+        url("A596C290B19FE571D7B825388B433543.jpeg") center / cover fixed;
+    }
+
+    .proceso-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .proceso-step {
+      min-height: 260px;
+    }
+
+    .step-number {
+      width: fit-content;
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: rgba(255, 215, 0, .12);
+      color: var(--gold);
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    #producto {
+      background: linear-gradient(180deg, #050505, #101010);
+    }
+
+    .producto-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr);
+      gap: 58px;
+      align-items: center;
+    }
+
+    .producto-lead {
+      margin: 22px 0 0;
+      color: var(--gray);
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    .feature-rows {
+      list-style: none;
+      display: grid;
+      gap: 14px;
+      margin: 30px 0 0;
+      padding: 0;
+    }
+
+    .f-row {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 16px;
+      border: 1px solid rgba(255, 215, 0, .14);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .035);
+    }
+
+    .f-row h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      color: var(--white);
+    }
+
+    .f-row p {
+      margin: 0;
+      color: var(--gray);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .specs-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 22px;
+      border: 1px solid rgba(255, 215, 0, .18);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: rgba(0, 0, 0, .28);
+    }
+
+    .spec-cell {
+      min-height: 82px;
+      display: grid;
+      align-content: center;
+      gap: 4px;
+      padding: 14px;
+      border-right: 1px solid rgba(255, 215, 0, .13);
+    }
+
+    .spec-cell:last-child { border-right: 0; }
+
+    .spec-val {
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .spec-name {
+      color: var(--gray);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .panel-scene {
+      position: relative;
+      min-height: 640px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .2);
+      background: #030303;
+      box-shadow: var(--shadow);
+    }
+
+    .panel-scene video {
+      width: 100%;
+      height: 100%;
+      min-height: 640px;
+      object-fit: cover;
+      opacity: .84;
+    }
+
+    .panel-scene::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 40%, rgba(0,0,0,.76) 100%),
+        radial-gradient(circle at 55% 28%, transparent 0 18rem, rgba(0,0,0,.34) 32rem);
+      pointer-events: none;
+    }
+
+    .p-badge {
+      position: absolute;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 215, 0, .22);
+      color: var(--soft);
+      background: rgba(0, 0, 0, .64);
+      backdrop-filter: blur(14px);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .p-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+    }
+
+    .pb-tl { top: 20px; left: 20px; }
+    .pb-br { right: 20px; bottom: 20px; }
+
+    #stats {
+      padding: 72px 0;
+      background: linear-gradient(90deg, #000, #151103, #000);
+      border-block: 1px solid var(--line);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid rgba(255, 215, 0, .18);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: rgba(255, 255, 255, .035);
+    }
+
+    .stat-cell {
+      min-height: 170px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 24px;
+      border-right: 1px solid rgba(255, 215, 0, .15);
+    }
+
+    .stat-cell:last-child { border-right: 0; }
+
+    .stat-num {
+      color: var(--gold);
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: .9;
+      font-weight: 900;
+    }
+
+    .stat-lbl {
+      color: var(--soft);
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.35;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    #sectores {
+      background:
+        linear-gradient(rgba(0,0,0,.82), rgba(0,0,0,.9)),
+        url("A5B467049A8CB521E3C2215652737473.jpeg") center / cover fixed;
+    }
+
+    .sectores-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .sector-card {
+      min-height: 210px;
+      display: grid;
+      align-content: end;
+      gap: 10px;
+    }
+
+    .sector-icon {
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      color: var(--gold);
+      font-size: 28px;
+    }
+
+    .sector-card h3 {
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .sector-card p {
+      margin: 0;
+      color: var(--gray);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    #galeria {
+      background: #090909;
+    }
+
+    .gallery-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-item {
+      position: relative;
+      min-height: 360px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .15);
+      background: #000;
+      box-shadow: var(--shadow);
+    }
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(4) {
+      grid-column: span 7;
+    }
+
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3) {
+      grid-column: span 5;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      transition: transform .7s var(--ease), opacity .7s var(--ease);
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:hover video {
+      transform: scale(1.07);
+      opacity: .78;
+    }
+
+    .gallery-caption {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 24px;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .92));
+    }
+
+    .gallery-caption strong {
+      display: block;
+      color: var(--white);
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .gallery-caption span {
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .testimonial-card {
+      min-height: 250px;
+    }
+
+    .stars {
+      color: var(--gold);
+      display: flex;
+      gap: 4px;
+      margin-bottom: 18px;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: #050505;
+      background: var(--gold);
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .video-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .video-tile {
+      min-height: 250px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .14);
+      background: #000;
+    }
+
+    .video-tile video {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      opacity: .9;
+    }
+
+    #contacto {
+      background:
+        radial-gradient(circle at 80% 15%, rgba(255, 215, 0, .12), transparent 24rem),
+        #050505;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr);
+      gap: 18px;
+      border: 1px solid rgba(255, 215, 0, .18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .04);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info,
+    .contact-form-wrap {
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, .1);
+      background: #0B0B0B;
+      padding: 30px;
+    }
+
+    .contact-info h3,
+    .contact-form-wrap h3 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .ci-sub {
+      margin: 12px 0 0;
+      color: var(--gray);
+      line-height: 1.65;
+    }
+
+    .ci-list {
+      list-style: none;
+      display: grid;
+      gap: 18px;
+      margin: 28px 0 0;
+      padding: 0;
+    }
+
+    .ci-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .ci-body h4 {
+      margin: 0 0 5px;
+      color: var(--soft);
+      font-size: 15px;
+    }
+
+    .ci-body p {
+      margin: 0;
+      color: var(--gray);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .ci-body a,
+    .ci-wa-link {
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .map-wrap {
+      margin-top: 24px;
+      height: 230px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255, 215, 0, .18);
+      background: #000;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: grayscale(1) contrast(1.1) invert(.88);
+      opacity: .82;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .form-label {
+      color: var(--soft);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .form-control {
+      width: 100%;
+      min-height: 50px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .06);
+      color: var(--white);
+      padding: 13px 14px;
+      outline: none;
+      transition: border-color .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 124px;
+    }
+
+    .form-control:focus {
+      border-color: rgba(255, 215, 0, .58);
+      box-shadow: 0 0 0 4px rgba(255, 215, 0, .1);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, .42);
+    }
+
+    select.form-control {
+      color-scheme: dark;
+    }
+
+    .form-submit {
+      width: 100%;
+      min-height: 54px;
+      border: 0;
+      margin-top: 4px;
+    }
+
+    .form-note {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    footer {
+      padding: 56px 0 28px;
+      background: #000;
+      border-top: 1px solid rgba(255, 215, 0, .18);
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: minmax(260px, .9fr) 1fr auto;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      display: grid;
+      gap: 14px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 21px;
+    }
+
+    .footer-brand p {
+      margin: 0;
+      color: var(--gray);
+      line-height: 1.65;
+      max-width: 360px;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 20px;
+    }
+
+    .footer-col h4 {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .footer-col a {
+      display: block;
+      margin-top: 9px;
+      color: var(--gray);
+      font-size: 14px;
+      transition: color .25s var(--ease);
+    }
+
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .footer-soc,
+    .wa-btn {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #050505;
+      background: var(--gold);
+      box-shadow: 0 18px 50px rgba(255, 215, 0, .2);
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+    }
+
+    .footer-soc:hover,
+    .wa-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 54px rgba(255, 215, 0, .28);
+    }
+
+    .footer-copy {
+      grid-column: 1 / -1;
+      margin: 14px 0 0;
+      padding-top: 22px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255, 255, 255, .09);
+      font-size: 13px;
+    }
+
+    .wa-btn {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 80;
+      width: 62px;
+      height: 62px;
+      font-size: 25px;
+      color: #050505;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .d1 { transition-delay: .08s; }
+    .d2 { transition-delay: .16s; }
+    .d3 { transition-delay: .24s; }
+    .d4 { transition-delay: .32s; }
+
+    .fx-title {
+      background: linear-gradient(90deg, var(--white), var(--gold), var(--white));
+      background-size: 220% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: titleGlow 5s ease-in-out infinite;
+    }
+
+    @keyframes loaderScan {
+      0%, 100% { transform: translateX(-30%); opacity: .22; }
+      50% { transform: translateX(30%); opacity: .7; }
+    }
+
+    @keyframes loaderHalo {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes loaderFill {
+      0% { transform: translateX(-130%); }
+      100% { transform: translateX(270%); }
+    }
+
+    @keyframes logoPulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(255,215,0,0)); }
+      50% { transform: scale(1.045); filter: drop-shadow(0 0 24px rgba(255,215,0,.32)); }
+    }
+
+    @keyframes slowDrift {
+      0% { transform: scale(1.05) translate3d(-1%, -1%, 0); }
+      100% { transform: scale(1.1) translate3d(1.5%, 1%, 0); }
+    }
+
+    @keyframes raySweep {
+      0%, 100% { opacity: .08; transform: rotate(24deg) translateX(-40px); }
+      50% { opacity: .8; transform: rotate(24deg) translateX(42px); }
+    }
+
+    @keyframes scanIntro {
+      0% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 1; }
+      100% { transform: translateY(760%); opacity: 0; }
+    }
+
+    @keyframes titleRise {
+      to { transform: translateY(0); }
+    }
+
+    @keyframes mouseDot {
+      0%, 100% { transform: translateY(0); opacity: .35; }
+      50% { transform: translateY(16px); opacity: 1; }
+    }
+
+    @keyframes marqueeMove {
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes titleGlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @media (max-width: 1024px) {
+      .nav-inner {
+        grid-template-columns: auto 1fr auto;
+        gap: 14px;
+      }
+
+      nav,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: grid;
+        grid-column: 3;
+      }
+
+      #mob-menu.open {
+        display: block;
+      }
+
+      .features-grid,
+      .stats-grid,
+      .sectores-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ambientes-grid,
+      .proceso-grid,
+      .producto-wrap,
+      .why-header,
+      .ambientes-top,
+      .proceso-header,
+      .sectores-hdr,
+      .contact-hdr,
+      .contact-box,
+      .testimonials-grid,
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .panel-scene,
+      .panel-scene video {
+        min-height: 520px;
+      }
+
+      .footer-socials {
+        justify-content: flex-start;
+      }
+
+      #hero {
+        overflow-x: clip;
+      }
+
+      #hero .container {
+        width: min(calc(100vw - 32px), 760px);
+        max-width: min(calc(100vw - 32px), 760px);
+      }
+
+      .hero-content,
+      .hero-sub,
+      .hero-ctas,
+      .hero-trust {
+        max-width: 100%;
+        min-width: 0;
+      }
+
+      .hero-sub,
+      .hero-sub strong {
+        overflow-wrap: anywhere;
+      }
+
+      .hero-ctas {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-ctas .btn-gold,
+      .hero-ctas .btn-outline {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 720px) {
+      :root { --container: min(calc(100% - 26px), 1180px); }
+
+      .nav-inner {
+        height: 74px;
+      }
+
+      .nav-logo {
+        min-width: 0;
+      }
+
+      .nav-logo-icon {
+        width: 52px;
+        height: 52px;
+      }
+
+      .nav-logo-copy span:first-child { font-size: 12px; }
+      .nav-logo-copy span:last-child { font-size: 15px; }
+
+      #hero {
+        min-height: 100svh;
+        padding: 112px 0 68px;
+        overflow-x: clip;
+      }
+
+      #hero .container {
+        width: calc(100vw - 64px);
+        max-width: calc(100vw - 64px);
+      }
+
+      .hero-content {
+        width: min(100%, 320px);
+      }
+
+      .hero-title {
+        font-size: clamp(40px, 13vw, 56px);
+        max-width: 100%;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-title .line > span {
+        width: 100%;
+      }
+
+      .hero-sub {
+        max-width: 100%;
+        width: 100%;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-sub strong {
+        overflow-wrap: anywhere;
+      }
+
+      .hero-trust {
+        width: 100%;
+        display: grid;
+        gap: 12px;
+      }
+
+      .trust-divider {
+        display: none;
+      }
+
+      .hero-content,
+      .hero-ctas,
+      .hero-trust {
+        min-width: 0;
+      }
+
+      .hero-ctas,
+      .hero-trust {
+        max-width: 320px;
+      }
+
+      .hero-ctas {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-ctas .btn-gold,
+      .hero-ctas .btn-outline {
+        width: 100%;
+        min-width: 0;
+      }
+
+      section {
+        padding: 78px 0;
+      }
+
+      .features-grid,
+      .ambientes-grid,
+      .proceso-grid,
+      .stats-grid,
+      .sectores-grid,
+      .form-row,
+      .footer-links,
+      .video-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .amb-card,
+      .amb-img,
+      .panel-scene,
+      .panel-scene video,
+      .gallery-item,
+      .gallery-item img,
+      .gallery-item video {
+        min-height: 410px;
+      }
+
+      .gallery-head {
+        display: grid;
+      }
+
+      .gallery-item,
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(2),
+      .gallery-item:nth-child(3),
+      .gallery-item:nth-child(4) {
+        grid-column: span 12;
+      }
+
+      .stat-cell {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 215, 0, .15);
+      }
+
+      .stat-cell:last-child {
+        border-bottom: 0;
+      }
+
+      .contact-info,
+      .contact-form-wrap {
+        padding: 22px;
+      }
+
+      .wa-btn {
+        right: 16px;
+        bottom: 16px;
+        width: 56px;
+        height: 56px;
+      }
+
+      .hero-bg,
+      .image-band-bg {
+        background-attachment: scroll;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body class="loading">
+
+  <div id="loader" aria-hidden="true">
+    <div class="loader-panel">
+      <div class="loader-content">
+        <img class="loader-logo" src="A5A6F6BD876A77776A2DF11703DE7C18.jpeg" alt="">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        <span class="loader-text">Cargando oro...</span>
+      </div>
+    </div>
+  </div>
+
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Gorras de Oro Palomo - inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="A5A6F6BD876A77776A2DF11703DE7C18.jpeg" alt="">
+          </div>
+          <div class="nav-logo-copy">
+            <span>Gorras de Oro</span>
+            <span>Palomo</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegacion principal">
+          <ul class="nav-links">
+            <li><a href="#why">Diferencia</a></li>
+            <li><a href="#ambientes">Productos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20de%20Gorras%20de%20Oro%20Palomo."
+           target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mob-menu" aria-label="Menu movil">
+      <a href="#why">Diferencia</a>
+      <a href="#ambientes">Productos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20de%20Gorras%20de%20Oro%20Palomo." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-badge">
+            <div class="badge-dot"></div>
+            Golden Pigeon Brand of Caps
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Tu gorra</span></span>
+            <span class="line"><span>vale</span></span>
+            <span class="line"><span class="accent">oro.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Gorras personalizadas con <strong>placas metalicas banadas en oro 14K</strong>, circonias y disenos hechos para quienes quieren competir, representar y destacar.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20con%20placa%20banada%20en%20oro%2014K."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Cotizar mi gorra
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#galeria" class="btn-outline">
+              <i class="fa-solid fa-images"></i>
+              Ver trabajos reales
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-gem"></i>
+              Placa oro 14K
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-pen-nib"></i>
+              Diseno personalizado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Guadalajara
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <section id="why" aria-labelledby="why-heading">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por que elegirnos</div>
+            <h2 class="why-quote fx-title" id="why-heading">
+              No es una gorra comun.
+              <em>Es una pieza con presencia.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Cada diseno combina estetica, comodidad y personalizacion para expresar identidad dentro y fuera del ambiente competitivo.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-crown"></i></div>
+            <h3>Detalles de lujo</h3>
+            <p>Placas metalicas banadas en oro 14K y acabados dorados que elevan la gorra desde el primer vistazo.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-fingerprint"></i></div>
+            <h3>Personalizacion real</h3>
+            <p>Tu nombre, tu equipo, tu santo, tu inicial o tu emblema convertido en una gorra unica.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Impacto inmediato</h3>
+            <p>Disenos modernos pensados para destacar en fotos, eventos, competencias y momentos importantes.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+            <h3>Fabricacion directa</h3>
+            <p>Un proceso enfocado en calidad, servicio y piezas irrepetibles hechas con identidad propia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Servicios y productos</div>
+            <h2 class="section-title" id="amb-heading">
+              Disenos que se sienten<br>
+              <span class="gold">hechos a tu medida</span>
+            </h2>
+            <p class="section-copy">
+              Las fotos son trabajos reales de la marca para mostrar textura, brillo y nivel de detalle sin depender de imagenes genericas.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Piezas personalizadas</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+          <div class="amb-card reveal">
+            <img class="amb-img" src="A596C290B19FE571D7B825388B433543.jpeg" alt="Gorra negra personalizada con placa dorada Partido San Antonio de Gorras de Oro Palomo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-gem"></i></div>
+              <h3>Placa oro 14K</h3>
+              <p>Gorras con placa metalica banada en oro 14K, grabado de alto detalle y presencia premium.</p>
+              <div class="amb-temp">Acabado dorado</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <img class="amb-img" src="A5B467049A8CB521E3C2215652737473.jpeg" alt="Gorra cafe personalizada con emblema dorado de Gorras de Oro Palomo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-signature"></i></div>
+              <h3>Iniciales y emblemas</h3>
+              <p>Tu identidad visual aplicada en una gorra con composicion limpia, simetrica y distintiva.</p>
+              <div class="amb-temp">Diseno exclusivo</div>
+            </div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <img class="amb-img" src="A5C987F5CA4F33AA27D1779BA46DF2BF.jpeg" alt="Gorra negra con corona dorada y detalles brillantes de Gorras de Oro Palomo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3>Circonias y brillo</h3>
+              <p>Detalles con circonias de calidad diamante para una pieza que refleja lujo sin perder caracter.</p>
+              <div class="amb-temp">Alto impacto</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="proceso-header reveal">
+          <div>
+            <div class="label">Como funciona</div>
+            <h2 class="section-title" id="proceso-heading">
+              De tu idea a una gorra <span class="gold">unica</span>
+            </h2>
+          </div>
+          <p>Un proceso simple para cotizar, definir el diseno y producir una pieza personalizada sin vueltas.</p>
+        </div>
+
+        <div class="proceso-grid">
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Envia tu idea</h3>
+            <p>Comparte nombre, equipo, santo, inicial, logo o concepto. Tambien puedes mandar referencias por WhatsApp.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Definimos el diseno</h3>
+            <p>Se aterriza el acabado, la placa, los detalles dorados y la composicion para que se vea proporcionada.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Fabricacion y entrega</h3>
+            <p>La gorra se fabrica con el acabado seleccionado y se coordina la entrega o envio directamente por WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+          <div class="reveal">
+            <div class="label">Producto destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              La gorra que no se explica:
+              <span class="gold">se presume</span>
+            </h2>
+            <p class="producto-lead">
+              Una pieza para quienes buscan accesorios con caracter: negra, dorada, personalizada y lista para representar una pasion con estilo premium.
+            </p>
+
+            <ul class="feature-rows" aria-label="Caracteristicas de las gorras personalizadas">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+                <div>
+                  <h4>Placa metalica banada en oro 14K</h4>
+                  <p>El detalle central del diseno aporta brillo, presencia y sensacion de pieza especial.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-vector-square"></i></div>
+                <div>
+                  <h4>Grabado 3D de alta definicion</h4>
+                  <p>Volumen visual para que nombres, simbolos y figuras se lean con fuerza.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-regular fa-gem"></i></div>
+                <div>
+                  <h4>Circonias calidad diamante</h4>
+                  <p>Acabados brillantes para disenos que buscan un nivel mas llamativo.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-hat-cowboy"></i></div>
+                <div>
+                  <h4>Comodidad y estilo moderno</h4>
+                  <p>La pieza se trabaja para verse premium sin dejar de ser un accesorio funcional.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Resumen de producto">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">14K</span>
+                <span class="spec-name">Bano de oro</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">3D</span>
+                <span class="spec-name">Grabado</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">1/1</span>
+                <span class="spec-name">Personal</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">WA</span>
+                <span class="spec-name">Cotizacion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <video src="A56F8D85A1FF1915295DDA934FB636DE.mp4" autoplay muted loop playsinline poster="A596C290B19FE571D7B825388B433543.jpeg" aria-label="Video de gorra personalizada de Gorras de Oro Palomo"></video>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Trabajo real
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--gold);"></i>
+                Diseno con presencia
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" aria-label="Numeros clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="14" data-suffix="K" aria-label="14 kilates">0</div>
+            <div class="stat-lbl">Bano de oro<br>en placa</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" data-suffix="" aria-label="3 pasos">0</div>
+            <div class="stat-lbl">Pasos para<br>cotizar</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="4" data-suffix="" aria-label="4 pilares">0</div>
+            <div class="stat-lbl">Pilares de<br>diseno</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100 por ciento personalizada">0</div>
+            <div class="stat-lbl">Gorra pensada<br>para ti</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+        <div class="sectores-hdr reveal">
+          <div>
+            <div class="label">Ideas de personalizacion</div>
+            <h2 class="section-title" id="sec-heading">
+              Tu historia puede ir <span class="gold">al frente</span>
+            </h2>
+          </div>
+          <p>La pagina evita prometer modelos cerrados: el valor esta en convertir una idea personal en una pieza visualmente fuerte.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-users sector-icon" aria-hidden="true"></i>
+            <h3>Partidos y equipos</h3>
+            <p>Para representar grupo, competencia o identidad con un acabado superior.</p>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-signature sector-icon" aria-hidden="true"></i>
+            <h3>Nombres e iniciales</h3>
+            <p>Disenos limpios para que tu nombre o inicial sea el protagonista.</p>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-cross sector-icon" aria-hidden="true"></i>
+            <h3>Santos y simbolos</h3>
+            <p>Piezas con significado personal, espiritual o familiar.</p>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-trophy sector-icon" aria-hidden="true"></i>
+            <h3>Competencia</h3>
+            <p>Accesorios para destacar en eventos y mostrar pertenencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="container">
+        <div class="gallery-head">
+          <div class="reveal">
+            <div class="label">Galeria real</div>
+            <h2 class="section-title" id="gal-heading">
+              Trabajos que ya <span class="gold">brillan</span>
+            </h2>
+          </div>
+          <p class="section-copy reveal d2">
+            Imagenes y videos proporcionados en el proyecto, usados como prueba visual del producto real.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <img src="A516D67DDE63F39A0212270481BF1B62.jpeg" alt="Dos gorras negras Partido Guadalajara con detalles dorados de Gorras de Oro Palomo">
+            <figcaption class="gallery-caption">
+              <strong>Partido Guadalajara</strong>
+              <span>Dos piezas negras con composicion dorada frontal.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal d1">
+            <img src="A5E43C09B5ED2C457158C23177790E78.jpeg" alt="Gorra negra con gallo dorado Partidos Los Manzanos de Gorras de Oro Palomo">
+            <figcaption class="gallery-caption">
+              <strong>Los Manzanos</strong>
+              <span>Emblema dorado al frente y textos laterales personalizados.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal d2">
+            <img src="A5B467049A8CB521E3C2215652737473.jpeg" alt="Gorra cafe con escudo dorado y laterales bordados de Gorras de Oro Palomo">
+            <figcaption class="gallery-caption">
+              <strong>Escudo personalizado</strong>
+              <span>Base cafe con placa frontal y detalles en laterales.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal d3">
+            <video src="A52E3EF8A2452E07B62BA8A7FC14AA7D.mp4" autoplay muted loop playsinline poster="A5C987F5CA4F33AA27D1779BA46DF2BF.jpeg" aria-label="Video de trabajo real de gorra personalizada"></video>
+            <figcaption class="gallery-caption">
+              <strong>Brillo en movimiento</strong>
+              <span>Video real para apreciar reflejos, volumen y acabados.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" aria-labelledby="test-heading">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="gallery-head">
+          <div class="reveal">
+            <div class="label">Opiniones</div>
+            <h2 class="section-title" id="test-heading">
+              Senales de <span class="gold">confianza</span>
+            </h2>
+          </div>
+          <p class="section-copy reveal d2">
+            Se incluye solo una opinion publica localizada; no se agregaron testimonios inventados.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="avatar" aria-hidden="true">MG</div>
+            <div class="stars" aria-label="Opinion positiva">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Mar Glez Ma</h3>
+            <p>"Recomendadisimo, excelente atencion."</p>
+          </article>
+
+          <div class="video-strip reveal d2" aria-label="Videos reales de producto">
+            <div class="video-tile">
+              <video src="A54B96D1E2B936A16C0BEEAA99D86014.mp4" autoplay muted loop playsinline poster="A596C290B19FE571D7B825388B433543.jpeg"></video>
+            </div>
+            <div class="video-tile">
+              <video src="A5A8B120C9B9ECFAB1D783E124373D35.mp4" autoplay muted loop playsinline poster="A5B467049A8CB521E3C2215652737473.jpeg"></video>
+            </div>
+            <div class="video-tile">
+              <video src="A5B9957E34E149797CF61EB406EECD32.mp4" autoplay muted loop playsinline poster="A5E43C09B5ED2C457158C23177790E78.jpeg"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-hdr reveal">
+          <div>
+            <div class="label">Contacto</div>
+            <h2 class="section-title" id="contact-heading">
+              Cotiza tu gorra <span class="gold">por WhatsApp</span>
+            </h2>
+          </div>
+          <p>El formulario abre WhatsApp con tu mensaje listo para enviar. Sin correos falsos, sin pantallas cargando.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-info">
+            <h3>Atencion personalizada</h3>
+            <p class="ci-sub">Comparte tu idea y recibe seguimiento directo para aterrizar tu diseno.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="ci-body">
+                  <h4>Zona</h4>
+                  <p>Guadalajara, Jalisco.<br>No se publico una direccion exacta verificable en el material recibido.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="ci-body">
+                  <h4>WhatsApp pedidos</h4>
+                  <p>
+                    <a href="tel:+523326081643">332 608 1643</a><br>
+                    <a href="tel:+523322464140">332 246 4140</a><br>
+                    <a href="tel:+523330169325">333 016 9325</a>
+                  </p>
+                  <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20de%20Gorras%20de%20Oro%20Palomo."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                <div class="ci-body">
+                  <h4>Horario y correo</h4>
+                  <p>Horario y correo no proporcionados. La atencion confirmada es por WhatsApp.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="map-wrap" aria-label="Mapa de referencia de busqueda en Guadalajara">
+              <iframe
+                title="Mapa de busqueda de Golden Pigeon Brand of Caps en Guadalajara"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Golden%20Pigeon%20Brand%20of%20Caps%20Guadalajara&output=embed">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <h3>Solicitar cotizacion</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control" placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Que quieres personalizar</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Gorra con placa oro 14K</option>
+                    <option>Gorra con nombre o iniciales</option>
+                    <option>Gorra para partido o equipo</option>
+                    <option>Gorra con santo o simbolo</option>
+                    <option>Gorra con circonias</option>
+                    <option>Cotizacion general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de tu idea</label>
+                <textarea id="f-msg" class="form-control" rows="4" required placeholder="Describe nombre, colores, simbolo, cantidad o referencia visual."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar se abrira WhatsApp con el mensaje escrito para que confirmes el envio.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-img" aria-hidden="true">
+              <img src="A5A6F6BD876A77776A2DF11703DE7C18.jpeg" alt="">
+            </div>
+            <span>Gorras de Oro Palomo</span>
+          </div>
+          <p>Golden Pigeon Brand of Caps. Gorras personalizadas con presencia, detalle y estilo premium.</p>
+        </div>
+
+        <div class="footer-links" aria-label="Enlaces del sitio">
+          <div class="footer-col">
+            <h4>Pagina</h4>
+            <a href="#why">Por que elegirnos</a>
+            <a href="#ambientes">Productos</a>
+            <a href="#proceso">Proceso</a>
+          </div>
+          <div class="footer-col">
+            <h4>Acciones</h4>
+            <a href="#galeria">Galeria</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20de%20Gorras%20de%20Oro%20Palomo." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/gorras_de_oro_palomo/" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/gorrasdeoropalomo/" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/523326081643?text=Hola%2C%20quiero%20cotizar%20una%20gorra%20personalizada%20de%20Gorras%20de%20Oro%20Palomo." target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Gorras de Oro Palomo. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/523326081643?text=Hola%2C%20visite%20su%20sitio%20web%20y%20quiero%20cotizar%20una%20gorra%20personalizada."
+     target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const WHATSAPP_NUMBER = "523326081643";
+
+    document.documentElement.classList.add("js-ready");
+
+    window.addEventListener("load", () => {
+      const minimumLoaderTime = 1900;
+      setTimeout(() => {
+        document.body.classList.add("loaded");
+        document.body.classList.remove("loading");
+      }, minimumLoaderTime);
+    });
+
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 24);
+    }, { passive: true });
+
+    const hamburger = document.getElementById("hamburger");
+    const mobMenu = document.getElementById("mob-menu");
+    hamburger.addEventListener("click", () => {
+      const isOpen = mobMenu.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    mobMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobMenu.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const marquee = document.getElementById("marquee");
+    const marqueeItems = [
+      "Gorras personalizadas",
+      "Placa metalica oro 14K",
+      "Circonias calidad diamante",
+      "Diseno exclusivo",
+      "Golden Pigeon Brand of Caps",
+      "Cotiza por WhatsApp"
+    ];
+    marquee.innerHTML = [...marqueeItems, ...marqueeItems, ...marqueeItems]
+      .map((item) => `<span>${item}</span>`)
+      .join("");
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .16 });
+
+    document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+    const counters = document.querySelectorAll(".stat-num");
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.count || 0);
+        const suffix = el.dataset.suffix || "";
+        const duration = 1300;
+        const start = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(target * eased).toLocaleString("es-MX") + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+
+        requestAnimationFrame(tick);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: .35 });
+
+    counters.forEach((counter) => countObserver.observe(counter));
+
+    const form = document.getElementById("wa-form");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const name = document.getElementById("f-name").value.trim();
+      const interest = document.getElementById("f-interest").value.trim();
+      const message = document.getElementById("f-msg").value.trim();
+
+      if (!name || !message) {
+        form.reportValidity();
+        return;
+      }
+
+      const text = [
+        "Hola, quiero cotizar una gorra personalizada de Gorras de Oro Palomo.",
+        `Nombre: ${name}`,
+        `Interes: ${interest}`,
+        `Idea: ${message}`
+      ].join("\n");
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function buildParticles(canvas, options = {}) {
+      const context = canvas.getContext("2d");
+      const parent = canvas.parentElement;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const particles = [];
+      const palette = options.palette || ["rgba(255,215,0,.86)", "rgba(255,255,255,.46)", "rgba(255,195,0,.58)"];
+      let width = 0;
+      let height = 0;
+      let frame;
+
+      const resize = () => {
+        const rect = parent.getBoundingClientRect();
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        width = Math.max(rect.width, 1);
+        height = Math.max(rect.height, 1);
+        canvas.width = Math.floor(width * ratio);
+        canvas.height = Math.floor(height * ratio);
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      };
+
+      const create = () => {
+        particles.length = 0;
+        const count = Math.round(Math.min(Math.max(width / 18, 36), options.max || 86));
+        for (let i = 0; i < count; i += 1) {
+          particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            r: Math.random() * 2.2 + .7,
+            vx: (Math.random() - .5) * .32,
+            vy: (Math.random() - .5) * .32,
+            color: palette[Math.floor(Math.random() * palette.length)],
+            pulse: Math.random() * Math.PI * 2
+          });
+        }
+      };
+
+      const draw = () => {
+        context.clearRect(0, 0, width, height);
+        particles.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.pulse += .03;
+
+          if (p.x < -10) p.x = width + 10;
+          if (p.x > width + 10) p.x = -10;
+          if (p.y < -10) p.y = height + 10;
+          if (p.y > height + 10) p.y = -10;
+
+          context.beginPath();
+          context.arc(p.x, p.y, p.r + Math.sin(p.pulse) * .35, 0, Math.PI * 2);
+          context.fillStyle = p.color;
+          context.shadowColor = "rgba(255,215,0,.55)";
+          context.shadowBlur = 14;
+          context.fill();
+        });
+
+        context.shadowBlur = 0;
+        for (let i = 0; i < particles.length; i += 1) {
+          for (let j = i + 1; j < particles.length; j += 1) {
+            const a = particles[i];
+            const b = particles[j];
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+            const distance = Math.hypot(dx, dy);
+            if (distance < 120) {
+              context.globalAlpha = (1 - distance / 120) * .18;
+              context.strokeStyle = "rgba(255,215,0,.65)";
+              context.lineWidth = 1;
+              context.beginPath();
+              context.moveTo(a.x, a.y);
+              context.lineTo(b.x, b.y);
+              context.stroke();
+              context.globalAlpha = 1;
+            }
+          }
+        }
+
+        if (!reduceMotion) frame = requestAnimationFrame(draw);
+      };
+
+      resize();
+      create();
+      draw();
+      window.addEventListener("resize", () => {
+        cancelAnimationFrame(frame);
+        resize();
+        create();
+        draw();
+      }, { passive: true });
+    }
+
+    const heroCanvas = document.getElementById("hero-canvas");
+    buildParticles(heroCanvas, { max: 92 });
+    document.querySelectorAll(".particle-canvas").forEach((canvas) => buildParticles(canvas, { max: 54 }));
+  </script>
+</body>
+</html>
